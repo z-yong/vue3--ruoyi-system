@@ -1,0 +1,565 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+@import "./transition.scss";
+@import "./element-ui.scss";
+@import "./sidebar.scss";
+@import "./btn.scss";
+@import "./flex.scss";
+@import "./common.scss";
+@import "./sideTheme.scss";
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+::selection {
+  // background: rgba(141, 214, 249, .35);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+// 穿透
+.prevent {
+  pointer-events: none;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: block;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+aside {
+  background: #eef1f6;
+  padding: 8px 24px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  display: block;
+  line-height: 32px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #2c3e50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    color: #337ab7;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(32, 160, 255);
+    }
+  }
+}
+
+//main-container全局样式
+.app-container {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.components-container {
+  margin: 30px 50px;
+  position: relative;
+}
+
+.pagination-container {
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.sub-navbar {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+  transition: 600ms ease position;
+  background: linear-gradient(90deg,
+      rgba(32, 182, 249, 1) 0%,
+      rgba(32, 182, 249, 1) 0%,
+      rgba(33, 120, 241, 1) 100%,
+      rgba(33, 120, 241, 1) 100%);
+
+  .subtitle {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  &.draft {
+    background: #d0d0d0;
+  }
+
+  &.deleted {
+    background: #d0d0d0;
+  }
+}
+
+.link-type,
+.link-type:focus {
+  color: #337ab7;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(32, 160, 255);
+  }
+}
+
+.filter-container {
+  padding-bottom: 10px;
+
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+  line-height: 16px;
+}
+
+.multiselect--active {
+  z-index: 1000 !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+//滚动条的滑块
+::-webkit-scrollbar-thumb {
+  background-color: #eaecf1;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: #c0c4cc;
+  }
+}
+
+// 表格上方 汇总行
+.summary-row {
+  P {
+    display: inline-block;
+    min-width: 120px;
+    margin-right: 50px;
+    font-size: 14px;
+    margin-top: 0;
+  }
+}
+
+// 同一个商品上架多个库位后的样式
+.row-branch {
+  margin: 0 -10px;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid #dfe6ec;
+
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.average-row {
+  p {
+    display: inline-block;
+    width: 25%;
+    min-width: 250px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    span:first-child {
+      color: #666;
+      font-size: 13px;
+      margin-right: 5px;
+    }
+
+    b {
+      font-weight: normal;
+    }
+  }
+}
+
+// 打印弹窗样式
+.tab_company_out {
+  // padding: 1.5cm 3.5cm 1.5cm 0.5cm !important;
+  padding: 1.5cm 2.5cm 1.5cm 0cm !important;
+
+  table {
+    border-collapse: collapse !important;
+  }
+
+  * {
+    color: #000 !important;
+    list-style-type: none !important;
+    font-family: "Hiragino Sans GB" !important;
+    font-weight: 100 !important;
+    font-size: 14px;
+
+    @media print {
+      color: #000 !important;
+      list-style-type: none !important;
+      font-family: "Hiragino Sans GB" !important;
+      font-weight: 100 !important;
+      font-size: 14px;
+    }
+  }
+}
+
+.none {
+  display: none;
+}
+
+.file-box {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  .file-btn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    outline: none;
+    background-color: transparent;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 0;
+  }
+}
+
+.vue-treeselect__indent-level-2 .vue-treeselect__tip {
+  display: none;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.red {
+  color: #f91678;
+}
+
+.pink {
+  color: #fa4593;
+}
+
+.blue {
+  color: #5ca0ff;
+}
+
+.green {
+  color: #1abbc4;
+}
+
+.black {
+  color: black;
+}
+
+.yellow {
+  color: #f6a200;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.gary {
+  color: #a6a6a6;
+}
+
+/* 栅栏二 */
+.span-20-1 {
+  width: 5%;
+}
+
+.span-20-2 {
+  width: 10%;
+}
+
+.span-20-3 {
+  width: 15%;
+}
+
+.span-20-4 {
+  width: 20%;
+}
+
+.span-20-5 {
+  width: 25%;
+}
+
+.span-20-6 {
+  width: 30%;
+}
+
+.span-20-7 {
+  width: 35%;
+}
+
+.span-20-8 {
+  width: 40%;
+}
+
+.span-20-9 {
+  width: 45%;
+}
+
+.span-20-10 {
+  width: 50%;
+}
+
+.span-20-11 {
+  width: 55%;
+}
+
+.span-20-12 {
+  width: 60%;
+}
+
+.span-20-13 {
+  width: 65%;
+}
+
+.span-20-14 {
+  width: 70%;
+}
+
+.span-20-15 {
+  width: 75%;
+}
+
+.span-20-16 {
+  width: 80%;
+}
+
+.span-20-17 {
+  width: 85%;
+}
+
+.span-20-18 {
+  width: 90%;
+}
+
+.span-20-19 {
+  width: 95%;
+}
+
+.span-20-20 {
+  width: 100%;
+}
+
+/* 栅栏三 */
+.span24-1 {
+  width: 4.17%;
+}
+
+.span24-2 {
+  width: 8.33%;
+}
+
+.span24-3 {
+  width: 12.5%;
+}
+
+.span24-4 {
+  width: 16.67%;
+}
+
+.span24-5 {
+  width: 20.83%;
+}
+
+.span24-6 {
+  width: 25%;
+}
+
+.span24-7 {
+  width: 29.17%;
+}
+
+.span24-8 {
+  width: 33.3333333%;
+}
+
+.span24-9 {
+  width: 37.5%;
+}
+
+.span24-10 {
+  width: 41.67%;
+}
+
+.span24-11 {
+  width: 45.83%;
+}
+
+.span24-12 {
+  width: 50%;
+}
+
+.span24-13 {
+  width: 54.17%;
+}
+
+.span24-14 {
+  width: 58.33%;
+}
+
+.span24-15 {
+  width: 62.5%;
+}
+
+.span24-16 {
+  width: 66.67%;
+}
+
+.span24-17 {
+  width: 70.83%;
+}
+
+.span24-18 {
+  width: 75%;
+}
+
+.span24-19 {
+  width: 79.17%;
+}
+
+.span24-20 {
+  width: 83.33%;
+}
+
+.span24-21 {
+  width: 87.5%;
+}
+
+.span24-22 {
+  width: 91.67%;
+}
+
+.span24-23 {
+  width: 95.83%;
+}
+
+.span24-24 {
+  width: 100%;
+}

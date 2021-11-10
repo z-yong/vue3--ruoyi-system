@@ -1,0 +1,113 @@
+// base color
+$blue: #324157;
+$light-blue: #3a71a8;
+$red: #c03639;
+$pink: #e65d6e;
+$green: #30b08f;
+$tiffany: #4ab7bd;
+$yellow: #fec171;
+$pangreen: #30b08f;
+
+// sidebar左侧菜单样式
+$sideBarWidth: 200px;
+$sideBarWidthNumber: 200;
+$sideBarMaxWidthNumber: 250;
+
+// 多组样式风格
+// ThemeDark
+$menuThemeDarkBg: #304156;
+$menuThemeDarkText: #bfcbd9;
+$menuThemeDarkActiveText: #409eff;
+$subThemeDarkMenuActiveText: #f4f4f5;
+$subThemeDarkMenuBg: #1f2d3d;
+$subThemeDarkMenuHover: #001528;
+// ThemeLight
+$menuThemeLightBg: #fff;
+$menuThemeLightText: #666;
+$menuThemeLightActiveText: #409eff;
+$subThemeLightMenuActiveText: #666;
+$subThemeLightMenuBg: #fff;
+$subThemeLightMenuHover: #ddd;
+// ThemeGray
+$menuThemeGrayBg: #ccc;
+$menuThemeGrayText: #555;
+$menuThemeGrayActiveText: #409eff;
+$subThemeGrayMenuActiveText: #555;
+$subThemeGrayMenuBg: #c0bfbf;
+$subThemeGrayMenuHover: #cac8c8;
+// ThemeGreen
+$menuThemeGreenBg: #007D74;
+$menuThemeGreenText: #eee;
+$menuThemeGreenActiveText: #409eff;
+$subThemeGreenMenuActiveText: #eee;
+$subThemeGreenMenuBg: #015a54;
+$subThemeGreenMenuHover: #0e6d68;
+// ThemeBlue
+$menuThemeBlueBg: #002155;
+$menuThemeBlueText: #ddd;
+$menuThemeBlueActiveText: #409eff;
+$subThemeBlueMenuActiveText: #eee;
+$subThemeBlueMenuBg: #021a41;
+$subThemeBlueMenuHover: #274470;
+// ThemePurple
+$menuThemePurpleBg: #660066;
+$menuThemePurpleText: #ddd;
+$menuThemePurpleActiveText: #409eff;
+$subThemePurpleMenuActiveText: #eee;
+$subThemePurpleMenuBg: #570357;
+$subThemePurpleMenuHover: #661666;
+// ThemeRed
+$menuThemeRedBg: #993333;
+$menuThemeRedText: #ddd;
+$menuThemeRedActiveText: #409eff;
+$subThemeRedMenuActiveText: #eee;
+$subThemeRedMenuBg: #862525;
+$subThemeRedMenuHover: #992727;
+// ThemeYellow
+$menuThemeYellowBg: #99CC99;
+$menuThemeYellowText: #fff;
+$menuThemeYellowActiveText: #409eff;
+$subThemeYellowMenuActiveText: #fff;
+$subThemeYellowMenuBg: #83b983;
+$subThemeYellowMenuHover: #6eb96e;
+// ThemeOrange
+$menuThemeOrangeBg: #c4c42d;
+$menuThemeOrangeText: #fff;
+$menuThemeOrangeActiveText: #409eff;
+$subThemeOrangeMenuActiveText: #fff;
+$subThemeOrangeMenuBg: #afaf29;
+$subThemeOrangeMenuHover: #b9b939;
+
+
+:export {
+  sideBarWidth: $sideBarWidth;
+  sideBarWidthNumber: $sideBarWidthNumber;
+  sideBarMaxWidthNumber: $sideBarMaxWidthNumber;
+
+  menuThemeDarkText: $menuThemeDarkText;
+  menuThemeDarkBg: $menuThemeDarkBg;
+
+  menuThemeLightText: $menuThemeLightText;
+  menuThemeLightBg: $menuThemeLightBg;
+
+  menuThemeGrayText: $menuThemeGrayText;
+  menuThemeGrayBg: $menuThemeGrayBg;
+
+  menuThemeGreenText: $menuThemeGreenText;
+  menuThemeGreenBg: $menuThemeGreenBg;
+
+  menuThemeBlueText: $menuThemeBlueText;
+  menuThemeBlueBg: $menuThemeBlueBg;
+
+  menuThemePurpleText: $menuThemePurpleText;
+  menuThemePurpleBg: $menuThemePurpleBg;
+
+  menuThemeRedText: $menuThemeRedText;
+  menuThemeRedBg: $menuThemeRedBg;
+
+  menuThemeYellowText: $menuThemeYellowText;
+  menuThemeYellowBg: $menuThemeYellowBg;
+
+  menuThemeOrangeText: $menuThemeOrangeText;
+  menuThemeOrangeBg: $menuThemeOrangeBg;
+}

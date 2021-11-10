@@ -1,0 +1,118 @@
+[
+  {
+    "name": "商品编码",
+    "minWidth": "160"
+  },
+  {
+    "name": "商品名称",
+    "minWidth": "200"
+  },
+  {
+    "name": "供应商名称",
+    "minWidth": "300"
+  },
+  {
+    "name": "二级供应商",
+    "minWidth": "300"
+  },
+  {
+    "name": "规格",
+    "minWidth": "170"
+  },
+  {
+    "name": "型号",
+    "minWidth": "100"
+  },
+  {
+    "name": "配送规格",
+    "minWidth": "180"
+  },
+  {
+    "name": "注册证号",
+    "minWidth": "280"
+  },
+  {
+    "name": "生产厂家",
+    "minWidth": "280"
+  },
+  {
+    "name": "库房名称",
+    "minWidth": "180"
+  },
+  {
+    "name": "二级库房",
+    "minWidth": "180"
+  },
+  {
+    "name": "科室名称",
+    "minWidth": "180"
+  },
+  {
+    "name": "商品分类",
+    "minWidth": "170"
+  },
+  {
+    "name": "批号",
+    "minWidth": "180"
+  },
+  {
+    "name": "批次号",
+    "minWidth": "220"
+  },
+  {
+    "name": "条码",
+    "minWidth": "180"
+  },
+  {
+    "name": "单位",
+    "minWidth": "70"
+  },
+  {
+    "name": "效期",
+    "minWidth": "110"
+  },
+  {
+    "name": "生产日期",
+    "minWidth": "110"
+  },
+  {
+    "name": "单价",
+    "minWidth": "150"
+  },
+  {
+    "name": "金额",
+    "minWidth": "200"
+  },
+  {
+    "name": "单号",
+    "minWidth": "180"
+  },
+  {
+    "name": "创建时间",
+    "minWidth": "160"
+  },
+  {
+    "name": "修改时间",
+    "minWidth": "160"
+  },
+  {
+    "name": "审核时间",
+    "minWidth": "160"
+  },
+  {
+    "name": "审核人",
+    "minWidth": "170"
+  },
+  {
+    "name": "创建人",
+    "minWidth": "170"
+  },
+  {
+    "name": "修改人",
+    "minWidth": "170"
+  },
+  {
+    "name": "状态",
+    "minWidth": "120"
+  }
+]
