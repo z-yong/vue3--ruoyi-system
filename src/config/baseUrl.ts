@@ -1,18 +1,12 @@
-const urlH8 = 'http://192.168.8.66:8888/hmms/' // 临沂妇幼正式环境
-const urlH9 = 'http://192.168.8.67:8888/hmms/' // 临沂妇幼测试环境
-const urlH12 = 'http://166.16.16.165:8888/hmms/' // 肿瘤正式环境
-const urlS1 = 'http://192.168.1.96:8181/hmms/' // 96开发库
-const urlS2 = 'http://192.168.1.96:8282/hmms/' // 96测试库
-const urlS3 = 'http://36.7.136.46:8282/hmms/' // 96测试库
-const urlS4 = 'http://192.168.1.96:8181/scp/' // 开发库 新
-// 后端测试地址
-const urlT0 = 'http://192.168.1.108:8888/hmms/' // 洪志强
-const urlT1 = 'http://192.168.1.249:8484/hmms/' // 鲁先锐
-const urlT2 = 'http://192.168.1.76:8888/hmms/' // 吴建敏
-const urlT3 = 'http://192.168.31.208:8888/hmms/' // 谢明宏
-const urlT5 = 'http://192.168.1.227:8888/hmms/' // 袁侠
-
-const syy = 'http://117.71.57.2:8282/hmms/' // 中医院
+/*
+ * @Autor: yong.zhu
+ * @Date: 2021-11-10 16:45:42
+ * @LastEditors: yong.zhu
+ * @LastEditTime: 2021-11-10 17:11:56
+ * @Description: 接口地址
+ * @Version: 1.0
+ */
+const urlS1 = 'http://192.168.1.96:9999/api/' // 96开发库
 
 let baseUrl = ''
 if (process.env.NODE_ENV === 'development') {
