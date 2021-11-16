@@ -5,7 +5,7 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const name = '药品管理系统' // 标题
+const name = '管理系统' // 标题
 
 module.exports = {
   publicPath: './',
@@ -23,16 +23,6 @@ module.exports = {
     overlay: {
       warnings: process.env.NODE_ENV === 'development',
       errors: process.env.NODE_ENV === 'development'
-    },
-    proxy: {
-      '/api': {
-        target: 'http://36.7.136.46:8282/hcms/',
-        ws: false,
-        changeOrigin: true,
-        pathRewrite: {
-          '^/api': ''
-        }
-      }
     }
   },
   configureWebpack: {

@@ -9336,11 +9336,6 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.nlark.com/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
-vue3-treeselect@^0.1.10:
-  version "0.1.10"
-  resolved "https://registry.nlark.com/vue3-treeselect/download/vue3-treeselect-0.1.10.tgz#d464ac780a55bc0357f49a345851a32705ba7111"
-  integrity sha1-1GSseApVvANX9Jo0WFGjJwW6cRE=
-
 vue@^3.0.0:
   version "3.2.13"
   resolved "https://registry.nlark.com/vue/download/vue-3.2.13.tgz?cache=0&sync_timestamp=1632248614126&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue%2Fdownload%2Fvue-3.2.13.tgz#9d1a94fc62dc29ae21a3dd0d8ee24198e421671e"

@@ -2,11 +2,11 @@
  * @Autor: yong.zhu
  * @Date: 2021-11-10 16:45:42
  * @LastEditors: yong.zhu
- * @LastEditTime: 2021-11-10 17:11:56
+ * @LastEditTime: 2021-11-16 08:51:25
  * @Description: 接口地址
  * @Version: 1.0
  */
-const urlS1 = 'http://192.168.1.96:9999/api/' // 96开发库
+const urlS1 = 'http://192.168.1.96:8181/jxhscp' // 开发库
 
 let baseUrl = ''
 if (process.env.NODE_ENV === 'development') {
