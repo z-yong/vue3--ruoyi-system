@@ -2,8 +2,8 @@
  * @Autor: yong.zhu
  * @Date: 2021-11-10 16:45:41
  * @LastEditors: yong.zhu
- * @LastEditTime: 2021-11-16 08:32:03
- * @Description: 
+ * @LastEditTime: 2021-11-16 08:52:20
+ * @Description: 配置项
  * @Version: 1.0
  */
 export default {

@@ -1,3 +1,11 @@
+<!--
+ * @Autor: yong.zhu
+ * @Date: 2021-11-10 16:45:42
+ * @LastEditors: yong.zhu
+ * @LastEditTime: 2021-11-26 16:02:16
+ * @Description: 
+ * @Version: 1.0
+-->
 <script lang='ts'>
 import { createVNode, VNode } from 'vue'
 export default {
@@ -19,12 +27,10 @@ export default {
       const vnodes: VNode[] = []
 
       if (icon) {
-        // <template><svg-icon iconClass={icon}/></template>
         vnodes.push(createVNode('svg-icon', { 'icon-class': icon }))
       }
 
       if (title) {
-        // <span slot='title'>{(title)}</span>
         vnodes.push(createVNode('span', { slot: 'title' }, title))
       }
       return vnodes
