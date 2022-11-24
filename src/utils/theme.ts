@@ -16,8 +16,7 @@ export default async function (val, callback: any = 'init') {
       message: ' 主题颜色更改中...',
       customClass: 'theme-message',
       type: 'success',
-      duration: 0,
-      iconClass: 'el-icon-loading',
+      duration: 0
     })
   }
   const getHandler = (id) => {

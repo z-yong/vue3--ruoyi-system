@@ -15,7 +15,8 @@
     "baseUrl": ".",
     "suppressImplicitAnyIndexErrors": true,
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "node"
     ],
     "paths": {
       "@/*": [

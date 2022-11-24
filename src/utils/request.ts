@@ -1,7 +1,8 @@
 import axios, { AxiosRequestConfig, AxiosError } from 'axios'
 import baseUrl from '@/config/baseUrl'
 import Message from '@/utils/message'
-import { ElMessageBox, ElLoading, ILoadingInstance } from 'element-plus'
+import { ElMessageBox, ElLoading } from 'element-plus'
+import { LoadingInstance } from 'element-plus/lib/components/loading/src/loading.js'
 import { getToken } from '@/utils/auth'
 import userStore from '@/store/user'
 import settings from '@/settings'
@@ -24,7 +25,7 @@ const service = axios.create({
   }
 })
 
-let loading: ILoadingInstance // 加载动画
+let loading: LoadingInstance // 加载动画
 let hasPermission: boolean = false // 当401时会弹层提示 此字段用来防止二次弹层
 const indexPath: string = process.env.NODE_ENV === 'production' ? window.globalVar.indexPath : '/'
 
